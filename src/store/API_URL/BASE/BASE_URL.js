@@ -1,0 +1,1 @@
+export const BASE_URL = "https://mvp.api.beinsport.ru/api/v1/";

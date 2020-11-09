@@ -1,0 +1,97 @@
+html
+	body
+		transition: background .2s ease
+
+// Grid
+._mb-16
+	margin-bottom: 16px
+
+._mb-32
+	margin-bottom: 32px
+
+.btn-load-spiner
+	position: relative
+	
+.button-spiner
+	position: absolute
+	top: 50%
+	left: 50%
+	margin-top: -0.5rem
+	margin-left: -0.5rem
+	transition: opacity .2s ease
+	opacity: 0
+	&.active-load
+		opacity: 1
+
+.button-text-spiner
+	opacity: 0
+	transition: opacity .2s ease
+
+	&.active-load
+		opacity: 1
+
+.btn-primary:disabled
+	cursor: default
+	
+
+.big-spinner-grow
+	height: 3em
+	width: 3em
+
+.spinner-grow-main
+	position: fixed
+	left: 50%
+	top: 50%
+	margin-left: -1.5em
+	margin-top: -1.5em
+	z-index: 10
+	opacity: 1
+	visibility: visible
+	transition: opacity .6s ease, visibility .2s ease
+	&.spiner-hide
+		opacity: 0
+		visibility: hidden
+		
+.bg-loading
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	z-index: 5
+	left: 0
+	background-color: rgba(0,0,0,.3)
+	visibility: visible
+	transition: opacity .6s ease, visibility .6s ease
+	&.spiner-hide
+		opacity: 0
+		visibility: hidden
+		
+
+.cust-container
+	padding-left: 165px
+	padding-top: 15px
+
+.poper-cust-dark
+	font-size: 13px
+	color: #fff
+	background-color: transparent
+	
+	.popover-header
+		background-color: #000
+		border: none
+		border-radius: 4px
+		font-size: 13px
+		font-weight: 300
+	.arrow::after
+		border-top-color: #000
+
+.users
+
+.fade-enter-active, .fade-leave-active
+	transition: opacity .15s
+
+.fade-enter, .fade-leave-to
+	opacity: 0
+
+.card-main
+	height: 100%

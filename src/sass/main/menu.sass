@@ -1,0 +1,45 @@
+.menu
+	background-color: #02042D
+	position: fixed
+	top: 0
+	bottom: 0
+	left: -165px
+	z-index: 10
+	transition: left .5s ease
+	width: 165px
+	&.menu-show
+		left: 0
+
+.menu-logo
+	margin: 24px 0
+	text-align: center
+	
+.logo
+	margin: 0 auto
+	height: 110px
+
+.menu-list
+	margin: 0
+	padding: 0 0 0 32px
+
+.menu-list__item
+	list-style-type: none
+	margin-bottom: 26px
+
+.menu-list__link
+	color: #fff
+	transition: color .2s ease
+	text-decoration: none
+	font-size: 14px
+	cursor: pointer
+	
+	&:hover
+		text-decoration: none
+		user-select: none
+		color: #adadad
+	&:active
+		text-decoration: none
+	&:focus
+		text-decoration: none
+	&.router-link-exact-active
+		color: #0275D8

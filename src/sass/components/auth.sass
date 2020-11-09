@@ -1,0 +1,71 @@
+html
+	body.auth
+		background-color: #F2F2F2
+
+.auth-template
+	height: 100vh
+	min-height: 600px
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+
+.auth-template-content
+	width: 100%
+	max-width: 450px
+	margin: 0 auto
+	.input-group-prepend
+		position: relative
+		flex-wrap: wrap
+
+	.error-text-vee
+		transition: max-height .3s ease, opacity .2s ease, margin .3s ease
+		max-height: 0
+		display: block
+		overflow: hidden
+		margin-top: 0
+		opacity: 0
+
+	.was-validated :invalid ~ .invalid-feedback, 
+	.was-validated :invalid ~ .invalid-tooltip, 
+	.is-invalid ~ .invalid-feedback, 
+	.is-invalid ~ .invalid-tooltip
+		max-height: 20px
+		opacity: 1
+		margin-top: 4px
+		
+	input
+		border-top-left-radius: 0
+		border-bottom-left-radius: 0
+		width: calc(100% - 41px)
+	.input-group-text
+		border-top-right-radius: 0
+		width: 41px
+		border-bottom-right-radius: 0
+		img
+			min-width: 15px
+
+	.cust-invalid-feedback
+		display: block
+		margin-bottom: 20px
+		margin-top: -20px
+		max-height: 38px
+		transition: max-height .3s ease, opacity .3s ease
+		overflow: hidden	
+
+	.slide-toggle-enter-active
+		transition: max-height .3s ease, opacity .3s ease
+
+	.slide-toggle-leave-active
+		transition: max-height .3s ease, opacity .3s ease
+	.slide-toggle-enter, .slide-toggle-leave-to
+		max-height: 0
+
+	.error-text-vee
+		.slide-toggle-leave-active
+			max-height: 0
+			transition: max-height .0s ease, opacity .3s ease
+
+
+.auth-template-content
+	button
+		min-width: 160px
